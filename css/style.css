@@ -16,6 +16,10 @@ body *{
     font-family: 'Open Sans', sans-serif;
 }
 
+.fill-empty{
+    height: 100vh;
+}
+
 .hidden{
     visibility: collapse;
 }
@@ -193,11 +197,6 @@ header {
     box-shadow: 0px 5px 5px gray;
 }
 
-.suggest-item:hover {
-    background-color: whitesmoke;
-    box-shadow: 0px 5px 15px gray;
-}
-
 .suggest-item img {
     width: 200px;
     height: 200px;
@@ -205,7 +204,7 @@ header {
     object-position: center;
 }
 
-.suggest-product-card-price {
+.suggest-product-price {
     font-size: large;
     font-weight: bold;
 }
@@ -219,6 +218,18 @@ header {
 .suggest-product-buy{
     display: flex;
 }
+
+.suggest-product-name{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.suggest-item:hover {
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 15px gray;
+}
+
 
 footer {
     box-sizing: border-box;
